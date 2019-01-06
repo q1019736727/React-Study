@@ -1,0 +1,32 @@
+.button-wrapper{
+  button{
+    padding: 10px 10px;
+    position: relative;
+    border: none;
+    overflow: hidden;
+    &:focus{
+      outline: none;
+    }
+    .circle{
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      vertical-align: top;
+      background: #67daf9;
+      border-radius: 50px;
+      position: absolute;
+      animation: bigger 0.3s;
+      opacity: 0.4;
+    }
+  }
+}
+
+@keyframes bigger {
+  0%{
+    transform: scale(0);
+  }
+  100%{
+    transform: scale(20);
+  }
+
+}
