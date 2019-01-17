@@ -14,6 +14,7 @@ class Button extends React.Component{
         return(
             <div className='button-wrapper'>
                 <button ref={this.ref} onClick={this.clickCircle.bind(this)}>
+                    {this.props.children}
                     <p>开启React世界</p>
                     {this.state.animation === true ?
                         <span onAnimationEnd={this.animationEnd.bind(this)}

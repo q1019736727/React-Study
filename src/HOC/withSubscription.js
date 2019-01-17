@@ -13,7 +13,7 @@ function withSubscription(WrappedComponent) {
                 <WrappedComponent
                     secret={this.state.secret}
                     >
-                    {/*这里面永远不会渲染*/}
+                    {this.props.children}
                 </WrappedComponent>
             )
         }
